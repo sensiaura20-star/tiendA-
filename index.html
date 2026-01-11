@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SensiAura | Precision Elevated</title>
+
+<meta name="description" content="SensiAura ofrece sensibilidades premium diseñadas para máxima precisión, control y rendimiento competitivo.">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --violet:#8f5bff;
+  --violet-soft:#b99cff;
+  --bg:#0a0712;
+  --glass:rgba(30,18,55,0.55);
+  --border:rgba(170,120,255,0.25);
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter', sans-serif;
+}
+
+body{
+  background:radial-gradient(circle at top,#140c28,#07050d 60%);
+  color:#fff;
+  overflow-x:hidden;
+}
+
+/* PARTICLES */
+#particles{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+}
+#particles span{
+  position:absolute;
+  width:3px;
+  height:3px;
+  background:var(--violet-soft);
+  border-radius:50%;
+  opacity:.35;
+  animation: rise linear infinite;
+}
+@keyframes rise{
+  from{transform:translateY(110vh);}
+  to{transform:translateY(-10vh);}
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:rgba(10,7,18,.8);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.header-inner{
+  max-width:1200px;
+  margin:auto;
+  padding:18px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:.5px;
+  color:var(--violet);
+}
+nav a{
+  margin-left:22px;
+  font-size:14px;
+  color:#ddd;
+  text-decoration:none;
+}
+nav a:hover{color:var(--violet);}
+
+/* HERO */
+.hero{
+  max-width:1200px;
+  margin:auto;
+  padding:90px 24px 70px;
+  text-align:center;
+}
+.hero h1{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:12px;
+  background:linear-gradient(90deg,var(--violet),#d0baff);
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{
+  max-width:600px;
+  margin:auto;
+  color:#cfc7ff;
+  font-size:16px;
+}
+
+/* SECTION */
+section{
+  max-width:1200px;
+  margin:auto;
+  padding:60px 24px;
+}
+
+/* PRODUCTS */
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+}
+.card{
+  background:var(--glass);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 20px 40px rgba(0,0,0,.45);
+  transition:.35s ease;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 30px 60px rgba(120,80,255,.25);
+}
+.card h3{
+  font-size:20px;
+  margin-bottom:10px;
+  color:var(--violet-soft);
+}
+.card p{
+  font-size:14px;
+  line-height:1.6;
+  color:#d6d0ff;
+  margin-bottom:18px;
+}
+.price{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:20px;
+}
+.btn{
+  display:block;
+  text-align:center;
+  padding:14px;
+  border-radius:10px;
+  background:linear-gradient(135deg,var(--violet),#5c2fff);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  letter-spacing:.3px;
+}
+.btn:hover{filter:brightness(1.15);}
+
+/* TRUST */
+.trust{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:22px;
+  margin-top:60px;
+}
+.trust div{
+  background:var(--glass);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px;
+  text-align:center;
+  font-size:14px;
+  color:#e4ddff;
+}
+
+/* FOOTER */
+footer{
+  margin-top:80px;
+  padding:35px 24px;
+  border-top:1px solid var(--border);
+  background:rgba(10,7,18,.9);
+  text-align:center;
+  font-size:13px;
+  color:#bdb6ff;
+}
+footer a{
+  color:var(--violet);
+  text-decoration:none;
+}
+</style>
+</head>
+<body>
+
+<!-- PARTICLES -->
+<div id="particles">
+<script>
+for(let i=0;i<90;i++){
+  const s=document.createElement("span");
+  s.style.left=Math.random()*100+"%";
+  s.style.animationDuration=(15+Math.random()*25)+"s";
+  document.getElementById("particles").appendChild(s);
+}
+</script>
+</div>
+
+<header>
+  <div class="header-inner">
+    <div class="logo">SensiAura</div>
+    <nav>
+      <a href="#productos">Productos</a>
+      <a href="https://wa.me/542227476062" target="_blank">WhatsApp</a>
+      <a href="https://www.tiktok.com/@sensi.aura0?_r=1&_t=ZM-92yUH7tvRdc" target="_blank">TikTok</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <h1>SensiAura </h1>
+  <p>Esta Enfocado  Sensibilidades+Modificaciones Personalizadas Ajustea Precisos Y En Crear Los Mejores Auxilios De Mira Creados Para Lograr Una Estabilidad De Mira Mas Estable Mas Modulos De Aimbot Legal Para Mas Fov Y Mejor Tolerencia A La Cabeza. </p>
+</div>
+
+<section id="productos">
+  <div class="products">
+
+    <div class="card">
+      <h3>SensiAura Pack Androi/IOS</h3>
+      <p> 
+  Con Tiene 
+      
+ -Calibrador De Mira
+
+- Calibrador De Sensi 
+
+- Sensibilidad+Valores De Modificasión
+
+- Apk Estabilizador de Mira
+
+- Hud 2/3 dedos 
+
+- Headtrick V1
+ 
+- Optimización+Fps
+
+• Resoluciones Gama Baja>Media>Alta
+</p>
+      <div class="price">$15 USD</div>
+      <a class="btn" href="https://wa.me/542227476062?text=Quiero%20SensiAura%20Core" target="_blank">Comprar</a>
+    </div>
+
+    <div class="card">
+      <h3>SensiAura Auxilio De Mira Androi </h3>
+      <p>-Aumentador De Sensibilidad-
+-Incrementa La Sensibilidad Tactil Para Lograr Movimientos Más Rápidos y Precisos, Facilitando El Apuntado y Mejorando Tu Aim.-
+
+-Estabilizador de Mira-
+-Reduce Movimientos involuntarios y Vibraciones Al Apuntar, Evitando Que La Mira Se Pase De La Cabeza.-
+
+-Micro Aimbot-
+-Realiza microajustes De Aimbot En La Mira Para Acercarla A La Cabeza- .</p>
+      <div class="price">$20 USD</div>
+      <a class="btn" href="https://wa.me/542227476062?text=Quiero%20SensiAura%20Elite" target="_blank">Comprar</a>
+    </div>
+
+    <div class="card">
+      <h3>SensiAura Auxilio De Mira IIOS</h3>
+      <p>🧠 EL AUXILIO DE MIRA AVANZADO ES UN SISTEMA DISEÑADO PARA OPTIMIZAR EL DESEMPEÑO DEL JUGADOR MEDIANTE TECNOLOGÍAS DE ASISTENCIA INTELIGENTE. INCORPORA UN MÓDULO DE AIMBOT DE ALTA PRECISIÓN, QUE MEJORA SIGNIFICATIVAMENTE LA EXACTITUD DEL APUNTADO Y PERMITE UN SEGUIMIENTO MÁS EFICIENTE DEL OBJETIVO.✨
+  ---
+😯 Y TAMBIÉN CUENTA CON UN ESTABILIZADOR DE MIRA QUE ESTÁ DISEÑADO PARA EVITAR QUE EL APUNTANDO SE DESPLACE MÁS ALLÁ DEL OBJETIVO, ESPECIALMENTE EN LA ZONA DE LA CABEZA. 🧠</p>
+      <div class="price">$25 USD</div>
+      <a class="btn" href="https://wa.me/542227476062?text=Quiero%20SensiAura%20Apex" target="_blank">Comprar</a>
+    </div>
+
+  </div>
+
+  <div class="trust">
+    <div>⚡ Entrega inmediata</div>
+    <div>🔒 Compra segura</div>
+    <div>🎯 Optimizado para precisión</div>
+  </div>
+</section>
+
+<footer>
+  © 2026 SensiAura · All rights reserved<br>
+  Contacto: <a href="https://wa.me/542227476062">WhatsApp</a>
+</footer>
+
+</body>
+</html>
+Tienda.html
+Tienda.html (7 KB)
+7 KB
